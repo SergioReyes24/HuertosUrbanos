@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#logo {
+    width: 8%;
+    float: left;
+    margin-left: -2%;
+    margin-top: -2%;
+    padding-right: 1%;
+}
+
+nav {
+    margin: 3% 6%;
+    background: rgb(173, 250, 154); 
+    border-style: solid; 
+    border-color: rgb(1, 39, 1); 
+    border-width: 2px; 
+    border-radius: 1% 1% 1% 1%;
+    text-align: center;
+    box-shadow: 5px 5px rgb(3, 68, 3);
+    background-image: url(./fondo.jpg);
+    background-size: 100%;
+    width: 97%;
+    align-content: center;
+}
+
+.casas { /*Se encarga de la segunda sección del submenú, su color y posición.*/
+	display: none;
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	z-index: 1;
+	width: inherit;
+}
+
+.casas a { /* Estos valores se encargan de lo que esta escrito dentro del submenú y le del la apariencia de tener interacción al poner el click encima.*/
+	float: none;
+  	padding: 4% 1%;
+  	color: rgb(0, 0, 0);
+  	text-decoration: none;
+	display:list-item;
+    list-style-type: none;
+	width: auto;
+}
+
+.casas a:hover { /*Por donde se pase el click cambiará de color al establecido.*/
+	background-color: rgb(49, 240, 24);
+}
+
+.desplegable {
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+    width: 16%;
+    text-align: center;
+    display: inline-block;
+    padding: 2% 0;
+}
+
+.desplegable .despb { /*Estos valores son los que les dan forma al menú, se encargan de su tamaño, su color y su alineación.*/
+    height: 200%;
+  	color: white;
+  	font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.desplegable:hover { /*Le da fondo al listado del menú para que cuando se ponga el click encima se sienta que si esta interactuando.*/
+    background-image: url(./fondo.jpg);
+    background-size: 100%;
+}
+
+.desplegable:hover .casas {
+	display: block;
+}
+
+#flecha { /*El fondo de la flecha es transparente, se le otorga un fondo de un color y tamaño para que cuando se cambie de color con el valor active haga un efecto de presión. */
+    width: 6%; 
+    position: fixed; 
+    right: 1.5%; 
+    bottom: 4%;
+    background-color: white;
+    border-radius: 60%;
+    background-image: url(./flecha-transparente.png);
+}
+
+#flecha:active { /*Cuando se presiona la flecha, esta propiedad le da un color de fondo distinto que hace parecer que hace una animación de subida y no se vea estático como antes. */
+    background-color: rgb(63, 235, 11);
+}
+
+body {
+    margin: 6%;
+}
+
+#body { /*Este identificador se encarga de cambiar el fondo del cuerpo de la página de contacto.*/
+    margin: 3%;
+    background-color: rgb(164, 255, 73);
+}
+
+h1 {
+    color: rgb(136, 218, 55);
+    text-align: center;
+    font-size: 70px;
+    text-shadow: 1px 8px rgb(0, 3, 0);
+    padding: 2%;
+    background-image: url(./fondo3.jpg);
+    background-size: max-content;
+    background-repeat: no-repeat;
+    margin: 11%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+h2 {
+    color: rgb(1, 56, 1);
+    font-size: 40px;
+    text-shadow: 4px 1px 10px rgb(10, 253, 10);
+    font-family: 'Stick', sans-serif;
+}
+
+.h2 {
+    color: rgb(87, 47, 2);
+    font-size: 40px;
+    text-shadow: 1px 1px rgb(79, 216, 15);
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#semillas { /*Le da caracteristicas como forma, tamaño, cambio de fuente, color y fondo al título de la página de que plantar.*/
+    font-size: 62px;
+    width: 80%;
+    color: rgb(235, 231, 12);
+    text-shadow: 10px 10px rgb(1, 3, 0);
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    background-image: url(./fondo4.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50px 60px 50px 60px;
+    box-shadow: 10px 10px 10px 10px rgb(24, 14, 1);
+    margin: 11%;
+    padding: 4%;
+}
+
+#creacion { /*Le da caracteristicas como forma, tamaño, cambio de fuente, color y fondo al título de la página de creación de huertos.*/
+    font-size: 70px;
+    color: #5e4222;
+    text-shadow: 3px 1px rgb(239, 255, 100);
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    background-image: url(./fondo6.jpg);
+    background-repeat: no-repeat;
+    border-radius: 50px 60px 50px 60px;
+    box-shadow: 10px 10px 10px 10px rgb(5, 24, 1);
+    margin: 11%;
+    padding: 10%;
+}
+
+#composta { /*Le da caracteristicas como forma, tamaño, cambio de fuente, color y fondo al título de la página de la composta.*/
+    font-size: 70px;
+    color: rgb(105, 248, 9);
+    text-shadow: 3px 1px #005c00;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgba(97, 46, 4, 0.884);
+    background-image: url(./fondo5.jpeg);
+    border-radius: 50px 60px 50px 60px;
+    box-shadow: 10px 10px 10px 10px rgb(24, 14, 1);
+    padding: 9%;
+    margin: 11%;
+}
+
+#contacto { /*Le da caracteristicas como forma, tamaño, cambio de fuente y color al título de la página de contacto.*/
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 3px 1px black;
+    font-family: 'Permanent Marker', cursive;
+    padding: 6%;
+    margin: 6%;
+}
+
+p {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 1.5%;
+}
+
+.p2 { /*Le da atributos a los párrafos de la mayoría de la página. Además de posicionarlo en forma horizontal.*/
+    font-size: 24px;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 1.5%;
+}
+
+i {
+    color: rgb(59, 194, 55);
+}
+
+b {
+    color: rgb(22, 88, 2);
+}
+
+.img {
+    width: 100%;
+    height: 100%/2;
+    border-radius: 10px 10px;
+    margin: 1%;
+}
+
+.imgn { /*Da atributos de tamaño a las imágenes con esta clase.*/
+    width: 30%; 
+    display:block;
+    margin:auto;
+}
+
+.i {
+    width: 480px;
+    height: 270px;
+    display:block;
+    margin:auto;
+}
+
+.imagen {
+    width: 15%; 
+    display:block;
+    margin:auto;
+}
+
+.redimg {
+    width: 50%;
+    padding: 5.5% 0 15% 20%;
+}
+
+.estructura { /*Posiciona todo lo que este dentro de esta clase en forma horizontal.*/
+    display: grid;
+    grid-template-columns: 25% 40% 35%;
+    margin: 5%;
+    align-items: center;
+}
+
+#verano { /*Identificador específico para darle un aspecto distintivo a la lista de verano de las semillas que se pueden plantar.*/
+    font-size: 50px;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    margin: 10px;
+    padding: 4%;
+    color: rgb(224, 142, 20);
+    text-shadow: 3px 3px rgb(4, 80, 64);
+}
+
+.verano {
+    font-size: 40px;
+    color: rgb(224, 142, 20);
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 1.5%;
+}
+
+#primavera { /*Identificador específico para darle un aspecto distintivo a la lista de primavera de las semillas que se pueden plantar.*/
+    font-size: 50px;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    margin: 1.5%;
+    padding: 4.2%;
+    color: rgb(224, 193, 20);
+    text-shadow: 3px 3px rgb(4, 80, 64);
+}
+
+.primavera { /*Les da valores específicos a los nombres de cada planta, cambiando su color y su sombra.*/
+    font-size: 40px;
+    color: rgb(224, 193, 20);
+    text-shadow: 1px 1px black;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 1%;
+}
+
+#otoño { /*Identificador específico para darle un aspecto distintivo a la lista de otoño de las semillas que se pueden plantar.*/
+    font-size: 50px;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    margin: 1.5%;
+    padding: 4.2%;
+    color: rgb(124, 53, 12);
+    text-shadow: 3px 3px rgb(80, 53, 4);
+}
+
+.otoño { /*Les da valores específicos a los nombres de cada planta, cambiando su color y su sombra.*/
+    font-size: 40px;
+    color: rgb(124, 53, 12);
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 1.5%;
+}
+
+#invierno { /*Identificador específico para darle un aspecto distintivo a la lista de invierno de las semillas que se pueden plantar.*/
+    font-size: 50px;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    margin: 1.5%;
+    padding: 4.2%;
+    color: rgb(20, 57, 224);
+    text-shadow: 3px 3px rgb(13, 207, 165);
+}
+
+.invierno { /*Les da valores específicos a los nombres de cada planta, cambiando su color y su sombra.*/
+    font-size: 40px;
+    color: rgb(20, 57, 224);
+    text-shadow: 1px 1px black;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 1.5%;
+}
+
+#todo { /*Identificador específico para la sección de todo el año.*/
+    font-size: 60px;
+    text-align: center;
+    font-family: 'DotGothic16', sans-serif;
+    margin: 1.5%;
+    padding: 4.2%;
+    color: rgb(224, 20, 20);
+    text-shadow: 3px 3px rgb(207, 13, 197);
+}
+
+.todo {
+    font-size: 40px;
+    color: rgb(224, 20, 20);
+    text-shadow: 1px 1px black;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 1.5%;
+}
+
+dl {
+    text-align: center;
+}
+
+.lista {
+    font-size: 40px;
+    text-align: center;
+    margin: 1%;
+    display: inline-grid;
+    grid-template-columns: repeat(5,220px);
+    text-shadow: 0px 0px 0px;
+}
+
+.lista2 { /*Centra, cambia el color, imagen de fondo, margen y el borde de una lista.*/
+    font-size: 60px;
+    text-align: center;
+    margin: 5% 30%;
+    color: rgba(133, 63, 5, 0.473);
+    text-shadow: 1px 2px 1px rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(./fondo7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10% 1% 25% 1%;
+    box-shadow: 10px 15px 10px 1px rgb(86, 226, 43);
+}
+
+dt{
+    color: rgb(1, 56, 1);
+    font-size: 50px;
+    text-shadow: 4px 1px 10px rgb(10, 253, 10);
+    font-family: 'Stick', sans-serif;
+    margin: 4.2%;
+    text-align: center;
+}
+
+dd {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Akaya Kanadaka', cursive;
+    margin: 2.4%;
+}
+
+.dd2 {
+    color: rgb(71, 36, 7);
+    font-size: 35px;
+    text-align: center;
+    margin: 3.3%;
+}
+
+.dd3 {
+    color: rgb(70, 34, 0);
+    font-size: 30px;
+    text-align: left;
+    margin: 1.5%;
+    padding: 1.5%;
+}
+
+.plantas1 { /*Valores para las imágenes de las plantas de la lista de qué plantar.*/
+    width: 70%;
+    margin: 1.5%;
+}
+
+.plantas2 { /*Valores para las imágenes de las plantas de la lista de qué plantar.*/
+    width: 100%;
+    margin: 1.5%;
+}
+
+iframe { /*Anchura y altura del elemento iframe que permite poner vídeos.*/
+    width: 480px;
+    height: 270px;
+}
+
+.contenedor { /*Valores del contenedor para las páginas relacionadas.*/
+    width: 90%;
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: repeat(5, 400px);
+    gap: 2.5%;
+    justify-content: center;
+    padding-bottom: 15%;
+    margin: 1% 3%;
+}
+
+.contenedor > div {
+    display: block;
+    padding: 2.4% 0;
+    color: white;
+    background: rgb(108, 255, 79);
+    box-shadow: 5px 10px 10px rgb(49, 138, 8);
+}
+
+hr {
+    color: rgb(1, 56, 1);
+    background-color: rgb(20, 218, 46);
+    height: 0.7%;
+    width: 90%;
+}
+
+.a {
+    color: rgb(6, 233, 55);
+    font-size: 30px;
+}
+
+.a:hover {
+    color: rgb(10, 112, 228);
+    font-size: 40px;
+}
+
+.a:active {
+    color: black;
+}
+
+footer {
+    background: rgb(46, 243, 20); 
+    min-width: 50%;
+    text-align: center; 
+    border-width: 5px; 
+    border-color: rgb(13, 235, 13); 
+    border-style: solid;
+    background-image: url(./fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 250px 100px;
+    box-shadow: 5px 5px 5px 5px rgb(5, 26, 0);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: static;
+    left: 50%;
+}
+
+.info {
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: black;
+}
+
+.redes { /*Tamaño de las imagenes de las redes sociales. */
+    width: 3.3%; 
+    min-width: 6%;
+}
+
+.redes2 { /*Una imágen de las redes sociales era más grande, por tanto creé otra clase con atributos más pequeños. */
+    width: 2.4%; 
+    min-width: 5.5%;
+}
+
+#RedesContacto {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: none;
+    justify-content: space-around;
+    align-self: center;
+}
+
+/*Valores para adaptar la página a dispositivos de máximo 760px*/
+@media screen and (max-width: 1000px) {
+    #logo {
+        width: 10%;
+        float: left;
+        margin-left: -3%;
+        margin-top: 1%;
+        padding-right: 1%;
+    }
+
+    nav {
+        margin: 5% 8%;
+        border-radius: 1% 1% 1% 1%;
+        text-align: center;
+        box-shadow: 5px 5px rgb(3, 68, 3);
+        width: auto;
+        align-content: center;
+        font-size: auto;
+        height: auto;
+    }
+
+    h1 {
+        height: auto;
+        width: auto;
+        font-size: auto;
+    }
+
+    .estructura {
+        display: grid;
+        grid-template-columns:auto;
+        margin: 5%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #semillas { 
+        font-size: auto;
+        width: auto;
+        margin: 8%;
+        padding: 2%;
+    }
+
+    .lista {
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+        display: inline-grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .plantas1 { 
+        width: 50%;
+        margin: 1.5%;
+    }
+    
+    .plantas2 { 
+        width: 50%;
+        margin: 1.5%;
+    }
+    
+    #creacion { 
+        font-size: auto;
+        width: auto;
+        margin: 8%;
+        padding: 2%;
+    }
+
+    .lista2 { 
+        font-size: auto;
+        text-align: center;
+        margin: 7% auto;
+        border-radius: 10% 1% 25% 1%;
+    }
+
+    .imgn {
+        width: 50%;
+        height: auto;
+    }
+
+    #composta { /*Le da caracteristicas como forma, tamaño, cambio de fuente, color y fondo al título de la página de la composta.*/
+        font-size: 260%;
+        width: auto;
+        height: auto;
+    }
+
+    .imagen {
+        width: 50%;
+        height: auto;
+    }
+
+    .dd3 {
+        font-size: 150%;
+    }
+
+    .contenedor {
+        font-size: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        width: auto;
+        height: auto;
+    }
+
+    .i {
+        width: 90%;
+        height: auto;
+    }
+
+    iframe {
+        width: 90%;
+        height: 500px;
+    }
+
+    #RedesContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    footer {
+        min-width: auto;
+        padding: auto;
+        margin: 10% auto;
+        position: static;
+    }
+
+}
