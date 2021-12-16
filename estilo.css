@@ -489,7 +489,7 @@ footer {
     align-self: center;
 }
 
-/*Valores para adaptar la página a dispositivos de máximo 760px*/
+/*Valores para adaptar la página a dispositivos de máximo 1000px*/
 @media screen and (max-width: 1000px) {
     #logo {
         width: 10%;
@@ -568,7 +568,7 @@ footer {
         height: auto;
     }
 
-    #composta { /*Le da caracteristicas como forma, tamaño, cambio de fuente, color y fondo al título de la página de la composta.*/
+    #composta {
         font-size: 260%;
         width: auto;
         height: auto;
@@ -615,5 +615,7 @@ footer {
         margin: 10% auto;
         position: static;
     }
-
+	p {
+        font-size: 150%;
+    }
 }
