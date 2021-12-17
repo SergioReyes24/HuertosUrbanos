@@ -190,7 +190,7 @@ p {
 }
 
 .p2 { /*Le da atributos a los párrafos de la mayoría de la página. Además de posicionarlo en forma horizontal.*/
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
     font-family: 'Akaya Kanadaka', cursive;
     margin: 1.5%;
@@ -616,6 +616,9 @@ footer {
         position: static;
     }
 	p {
+        font-size: 150%;
+    }
+	.p2 {
         font-size: 150%;
     }
 }
